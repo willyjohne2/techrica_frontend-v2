@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/main.css";
-
+import logo from "../assets/techrica-logo.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-content">
           <Link to="/" className="logo">
-            <span className="logo-text">Techrica</span>
+            <img src={logo} alt="" className="max-w-[3em] " />
           </Link>
 
           <div className={`nav-links ${isOpen ? "active" : ""}`}>
@@ -31,8 +31,7 @@ const Navbar = () => {
           <button
             className="hamburger"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
+            aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
@@ -52,7 +51,7 @@ const Navbar = () => {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 20px 0;
+          padding: 10px 0;
         }
         .logo {
           font-size: 1.8rem;
