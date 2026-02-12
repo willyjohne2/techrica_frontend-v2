@@ -1,5 +1,3 @@
-import React from "react";
-import "../styles/main.css";
 
 const MemberCard = ({ member, onClick }) => {
   const handleClick = () => {

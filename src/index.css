@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+:root {
+    --primary: ;
+    --primary-dark: ;
+    --secondary: ;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: ;
+    --light-gray: #e2e8f0;
+    --shadow: ;
+    --shadow-lg: ;
+    --transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+}

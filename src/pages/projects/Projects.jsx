@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProjectCard from "../components/ProjectCard";
-import "../styles/main.css";
+import ProjectCard from "../../components/ui/ProjectCard";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -139,8 +138,7 @@ const Projects = () => {
               <button
                 key={filter.id}
                 className={`filter-btn ${activeFilter === filter.id ? "active" : ""}`}
-                onClick={() => handleFilter(filter.id)}
-              >
+                onClick={() => handleFilter(filter.id)}>
                 {filter.label}
               </button>
             ))}

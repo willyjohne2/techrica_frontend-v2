@@ -1,16 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Projects from "./pages/Projects.jsx";
-import Contact from "./pages/Contact.jsx";
-import "./styles/main.css";
-
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/ui/Navbar.jsx";
+import Footer from "./components/ui/Footer.jsx";
+import Home from "./pages/home/Home.jsx";
+import About from "./pages/about/About.jsx";
+import Projects from "./pages/projects/Projects.jsx";
+import Contact from "./pages/contact/Contact.jsx";
+import "./index.css"
 function App() {
   return (
-    <Router>
       <div className="App">
         <Navbar />
         <main>
@@ -23,7 +21,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
   );
 }
 
