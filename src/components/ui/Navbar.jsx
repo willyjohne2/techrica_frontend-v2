@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/techrica-logo.png"
+
 const Navbar = () => {
 
 return (
   <header className="flex justify-between items-center fixed w-full bg-slate-950/98 backdrop:blur-2xl right-0 left-0 p-4 z-50">
     <Link to="/" className="">
-      <img src={logo} alt="" className="max-w-[5em] h-auto" />
+      <img src="./techrica-logo.png" alt="TechRica Logo" className="max-w-[3em] h-auto" />
     </Link>
 
     <nav>
