@@ -16,7 +16,7 @@ const WhatWeDo = () => {
                       </div>
                     ))}
               </div>
-              <img src={what_we_do_img} alt="What We Do" className="w-full max-w-[30em] top-12 -left-7 mx-auto mt-8 absolute" />
+              <img src={what_we_do_img} alt="What We Do" className="w-full max-w-[20em] hidden md:block md:max-w-[30em] top-12 -left-7 mx-auto mt-8 absolute" />
           </div>  
        
         <div className="bg-gray-900/50 z-40 backdrop-blur-sm rounded-2xl p-8 border border-green-900/20">

@@ -13,14 +13,11 @@ const Blogs = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-gray-200/20 mb-6">
             <h1 className="text-3xl mb-4">Blog Post 2</h1>
             <p className="text-gray-300">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-gray-200/20 mb-6">
+          </div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-gray-200/20 mb-6">
             <h1 className="text-3xl mb-4">Blog Post 3</h1>
             <p className="text-gray-300">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-        </div>
-        <div className="flex-1 relative">
-          <img src="./blogs.png" alt="Blogs" className="w-full absolute max-w-4xl -top-12 -left-7 mx-auto mt-8" />  
         </div>
       </div>  
     </section>
