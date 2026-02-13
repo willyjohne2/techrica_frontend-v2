@@ -1,4 +1,4 @@
-import stat_image from "../../../../public/mid.gif"
+import stat_image from "/mid.gif"
 
 const Stats = () => {
   return (
