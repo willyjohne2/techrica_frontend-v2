@@ -1,5 +1,6 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import MemberCard from "../../components/ui/MemberCard";
+import "./About.css";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -18,18 +19,20 @@ const About = () => {
           {
             id: 1,
             name: "Davine Olouch",
-            role: "Frontend Developer",
+            role: "Marketing Manager",
             bio: "Passionate about creating beautiful user interfaces with React.",
-            image: "https://via.placeholder.com/400x400",
+            image:
+              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
             portfolioUrl: "https://alexjohnson.dev",
             skills: ["React", "JavaScript", "CSS", "UI/UX"],
           },
           {
             id: 2,
-            name: "Pope",
-            role: "Backend Engineer",
+            name: "Wilson Maina",
+            role: "Chief Development Officer",
             bio: "Expert in building scalable server-side applications.",
-            image: "https://via.placeholder.com/400x400",
+            image:
+              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
             portfolioUrl: "https://mariagarcia.dev",
             skills: ["Node.js", "Python", "PostgreSQL", "AWS"],
           },
@@ -38,18 +41,64 @@ const About = () => {
             name: "Mike",
             role: "AI Specialist",
             bio: "Creating intelligent solutions with machine learning.",
-            image: "https://via.placeholder.com/400x400",
+            image:
+              "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
             portfolioUrl: "https://davidkim.ai",
             skills: ["Python", "TensorFlow", "ML", "Data Science"],
           },
           {
             id: 4,
-            name: "Jeff Mtongoi",
+            name: "Jeff Arribion",
             role: "Full Stack Developer",
             bio: "Bridging frontend and backend for complete solutions.",
-            image: "https://via.placeholder.com/400x400",
+            image:
+              "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
             portfolioUrl: "https://sarahmiller.dev",
             skills: ["React", "Node.js", "MongoDB", "GraphQL"],
+          },
+          {
+            id: 5,
+            name: "Mike",
+            role: "Frontend Developer",
+            bio: "Passionate about creating beautiful user interfaces with React.",
+            image:
+              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+            portfolioUrl: "https://alexjohnson.dev",
+            skills: [
+              "React",
+              "JavaScript",
+              "CSS",
+              "UI/UX",
+              "TypeScript",
+              "Express.js",
+            ],
+          },
+          {
+            id: 6,
+            name: "John",
+            role: "Full Stack Developer",
+            bio: "Full Stack Developer passionate about building scalable, user-focused web applications. Experienced in React, Node.js, and modern JavaScript technologies, I specialize in creating seamless frontend experiences backed by robust backend systems. I enjoy turning complex problems into simple, elegant solutions.",
+            image:
+              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+            portfolioUrl: "https://mariagarcia.dev",
+            skills: [
+              "React",
+              "JavaScript",
+              "CSS",
+              "UI/UX",
+              "TypeScript",
+              "Express.js",
+            ],
+          },
+          {
+            id: 7,
+            name: "Josphat",
+            role: "Backend Engineer",
+            bio: "Expert in building scalable server-side applications.",
+            image:
+              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+            portfolioUrl: "https://mariagarcia.dev",
+            skills: ["Node.js", "Python", "PostgreSQL", "AWS"],
           },
         ]);
       } finally {
@@ -61,46 +110,92 @@ const About = () => {
   }, []);
 
   const handleMemberClick = (member) => {
-    // Could navigate to member profile page
-    console.log("Clicked member:", member);
-    // For now, just log. You can implement routing to /team/:id later
+    if (member.portfolioUrl) {
+      window.open(member.portfolioUrl, "_blank");
+    }
   };
 
   return (
-    <div>
+    <div className="about-page">
       {/* Hero Section */}
-      <section className="about-hero">
+      <section className="hero-section">
+        <div className="hero-overlay"></div>
         <div className="container">
-          <div className="about-hero-content">
-            <h1>About Techrica</h1>
+          <div className="hero-content">
+            <h1 className="hero-title">
+              Welcome to <span className="highlight">Techrica</span>
+            </h1>
             <p className="hero-subtitle">
-              We're a team of passionate developers, designers, and innovators
-              dedicated to creating exceptional digital experiences.
+              Techrica is a forward-thinking technology company driven by
+              innovation, creativity, and excellence. We specialize in building
+              modern, scalable, and user-focused digital solutions that empower
+              businesses and individuals to thrive in the digital world.
             </p>
+            <p className="hero-subtitle">
+              Our team of passionate developers, designers, and strategists work
+              collaboratively to transform ideas into powerful digital
+              experiences. From responsive websites and eCommerce platforms to
+              custom web applications, we combine technical expertise with
+              creative design to deliver results that exceed expectations.
+            </p>
+            <p className="hero-subtitle">
+              At Techrica, we believe technology should be accessible,
+              efficient, and impactful. Our mission is to help brands grow,
+              innovate, and succeed through smart and reliable digital
+              solutions.
+            </p>
+            <div className="hero-stats">
+              <div className="stat-item">
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Projects Completed</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">20+</span>
+                <span className="stat-label">Team Members</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">5+</span>
+                <span className="stat-label">Years Experience</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Company Description */}
-      <section className="section">
+      {/* Mission Vision Values Section */}
+      <section className="mv-section">
         <div className="container">
-          <div className="company-info">
-            <div className="info-block">
-              <h2>Our Mission</h2>
+          <div className="section-header">
+            <span className="section-tag">Why Choose Us</span>
+            <h2 className="section-title">Driving Digital Excellence</h2>
+            <p className="section-description">
+              We combine technical expertise with creative design to deliver
+              exceptional results
+            </p>
+          </div>
+
+          <div className="mv-grid">
+            <div className="mv-card mission">
+              <div className="mv-icon">🎯</div>
+              <h3>Our Mission</h3>
               <p>
                 To empower businesses with cutting-edge digital solutions that
                 drive growth, enhance efficiency, and create meaningful impact.
               </p>
             </div>
-            <div className="info-block">
-              <h2>Our Vision</h2>
+
+            <div className="mv-card vision">
+              <div className="mv-icon">✨</div>
+              <h3>Our Vision</h3>
               <p>
                 To be the leading partner for digital transformation, recognized
-                for innovation, quality, and client success.
+                for innovation, quality, and client success worldwide.
               </p>
             </div>
-            <div className="info-block">
-              <h2>Core Values</h2>
+
+            <div className="mv-card values">
+              <div className="mv-icon">💎</div>
+              <h3>Core Values</h3>
               <ul className="values-list">
                 <li>Innovation & Creativity</li>
                 <li>Quality & Excellence</li>
@@ -113,16 +208,23 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Members */}
-      <section className="section" style={{ backgroundColor: "#f8fafc" }}>
+      {/* Team Section */}
+      <section className="team-section">
         <div className="container">
-          <h2 className="section-title">Meet Our Team</h2>
-          <p className="section-subtitle">
-            Click on any team member to view their portfolio
-          </p>
+          <div className="section-header">
+            <span className="section-tag">Our Team</span>
+            <h2 className="section-title">Meet the Experts</h2>
+            <p className="section-description">
+              Click on any team member to view their portfolio and connect with
+              them
+            </p>
+          </div>
 
           {loading ? (
-            <div className="loading">Loading team members...</div>
+            <div className="loading-container">
+              <div className="loading-spinner"></div>
+              <p>Loading team members...</p>
+            </div>
           ) : (
             <div className="team-grid">
               {members.map((member) => (
@@ -137,88 +239,16 @@ const About = () => {
         </div>
       </section>
 
-      <style jsx>{`
-        .about-hero {
-          padding: 160px 0 80px;
-          background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-          color: white;
-          text-align: center;
-        }
-        .about-hero h1 {
-          font-size: 3.5rem;
-          margin-bottom: 1.5rem;
-        }
-        .hero-subtitle {
-          font-size: 1.25rem;
-          max-width: 700px;
-          margin: 0 auto;
-          color: #cbd5e1;
-          line-height: 1.6;
-        }
-        .company-info {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 3rem;
-        }
-        .info-block {
-          padding: 2rem;
-        }
-        .info-block h2 {
-          color: var(--primary);
-          margin-bottom: 1rem;
-          font-size: 1.75rem;
-        }
-        .info-block p {
-          color: var(--gray);
-          line-height: 1.7;
-        }
-        .values-list {
-          list-style: none;
-          padding-left: 0;
-        }
-        .values-list li {
-          padding: 0.75rem 0;
-          border-bottom: 1px solid var(--light-gray);
-          color: var(--dark);
-          position: relative;
-          padding-left: 1.5rem;
-        }
-        .values-list li:before {
-          content: "✓";
-          color: var(--secondary);
-          position: absolute;
-          left: 0;
-          font-weight: bold;
-        }
-        .team-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 2rem;
-        }
-        .loading {
-          text-align: center;
-          padding: 3rem;
-          color: var(--gray);
-        }
-        @media (max-width: 768px) {
-          .about-hero {
-            padding: 140px 0 60px;
-          }
-          .about-hero h1 {
-            font-size: 2.5rem;
-          }
-          .hero-subtitle {
-            font-size: 1.1rem;
-          }
-          .company-info {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-          }
-          .team-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
+      {/* CTA Section */}
+      <section className="cta-section">
+        <div className="container">
+          <div className="cta-content">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's collaborate and bring your ideas to life</p>
+            <button className="cta-button">Get in Touch</button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
