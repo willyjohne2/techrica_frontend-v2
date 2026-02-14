@@ -16,7 +16,13 @@ const testimonialsData = [
         name: "Michael Johnson",
         title: "CISO, SecureTech",
         testimonial: "Tech Rica's security design has been a game-changer for our organization. Their comprehensive approach to cybersecurity has helped us mitigate risks and safeguard our critical data."  
-    }
+  },
+  {
+        id: 4,
+        name: "Emily Davis",
+        title: "Head of IT, DataGuard",
+        testimonial: "Tech Rica's security design has exceeded our expectations. Their innovative solutions and commitment to excellence have significantly improved our cybersecurity posture."  
+  }
 ]
 
 const Testimonials = () => {
@@ -24,10 +30,10 @@ const Testimonials = () => {
     <section className="min-h-screen bg-slate-950 px-4 py-12">
       <h2 className="text-3xl font-bold text-center mb-8 text-green-600">What Our Clients Say</h2>
           <div className="flex gap-8">
-              <div className="flex-2 grid gap-4 grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
+              <div className="flex-2 grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
                   {
                       testimonialsData.map((item) => (
-                            <div key={item.id} className="bg-slate-800 p-4 min-h-[10em] rounded-lg">
+                            <div key={item.id} className="bg-slate-800 border-l-4 border-green-500 p-4 min-h-[10em] rounded-lg">
                               <h3 className="text-lg font-semibold text-white">{item.name}</h3>
                               <p className="text-gray-300 italic">{item.title}</p>
                               <p className="text-gray-300 mt-2">"{item.testimonial}"</p>

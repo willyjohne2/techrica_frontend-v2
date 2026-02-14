@@ -44,11 +44,11 @@ const About = () => {
           },
           {
             id: 4,
-            name: "Jeff Mtongoi",
+            name: "Tony",
             role: "Full Stack Developer",
             bio: "Bridging frontend and backend for complete solutions.",
             image: "https://via.placeholder.com/400x400",
-            portfolioUrl: "https://sarahmiller.dev",
+            portfolioUrl: "https://tonyrodriguez.dev",
             skills: ["React", "Node.js", "MongoDB", "GraphQL"],
           },
         ]);
