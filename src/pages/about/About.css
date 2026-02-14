@@ -101,7 +101,7 @@
 
 .section-tag {
   display: inline-block;
-  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  background: linear-gradient(135deg, #00ff1a, #010529);
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 100px;
@@ -128,7 +128,7 @@
 /* Mission Vision Values Section */
 .mv-section {
   padding: 80px 0;
-  background: white;
+  background: rgb(4, 1, 20);
 }
 
 .mv-grid {
@@ -138,12 +138,12 @@
 }
 
 .mv-card {
-  background: white;
+  background: rgb(2, 13, 31);
   padding: 2.5rem 2rem;
   border-radius: 24px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #00ff0d;
 }
 
 .mv-card:hover {
@@ -203,7 +203,7 @@
 /* Team Section */
 .team-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #001701;
 }
 
 .team-grid {
@@ -258,10 +258,10 @@
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  background: linear-gradient(135deg, #00ff11, #002310);
   color: white;
   border: none;
-  padding: 1rem 2.5rem;
+  padding: 0.51rem 2.5rem;
   font-size: 1.125rem;
   font-weight: 600;
   border-radius: 100px;

@@ -1,28 +1,41 @@
-
 const ProjectCard = ({ project }) => {
   return (
-    <div className="project-card">
-      <div className="project-image">
-        <img src={project.image} alt={project.title} />
+    <div className="bg-slate-800 rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl h-full">
+      {/* Project Image */}
+      <div className="h-52 overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        />
       </div>
-      <div className="project-info">
-        <h3 className="project-title">{project.title}</h3>
-        <p className="project-description">{project.description}</p>
-        <div className="project-technologies">
+
+      {/* Project Info */}
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">
+          {project.title}
+        </h3>
+        <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+
+        {/* Technologies */}
+        <div className="flex flex-wrap gap-2 mb-6">
           {project.technologies.map((tech, index) => (
-            <span key={index} className="tech-tag">
+            <span
+              key={index}
+              className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200">
               {tech}
             </span>
           ))}
         </div>
-        <div className="project-links">
+
+        {/* Links */}
+        <div className="flex flex-wrap gap-3">
           {project.demoUrl && (
             <a
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn"
-            >
+              className="px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium transition-colors hover:bg-green-700">
               Live Demo
             </a>
           )}
@@ -31,85 +44,12 @@ const ProjectCard = ({ project }) => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary"
-            >
+              className="px-4 py-2 bg-white border border-green-600 text-green-600 rounded-lg text-sm font-medium transition-colors hover:bg-green-50">
               GitHub
             </a>
           )}
         </div>
       </div>
-      <style jsx>{`
-        .project-card {
-          background: white;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: var(--shadow);
-          transition: var(--transition);
-          height: 100%;
-        }
-        .project-card:hover {
-          transform: translateY(-5px);
-          box-shadow: var(--shadow-lg);
-        }
-        .project-image {
-          height: 200px;
-          overflow: hidden;
-        }
-        .project-image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: var(--transition);
-        }
-        .project-card:hover .project-image img {
-          transform: scale(1.05);
-        }
-        .project-info {
-          padding: 1.5rem;
-        }
-        .project-title {
-          font-size: 1.25rem;
-          margin-bottom: 0.75rem;
-          color: var(--dark);
-        }
-        .project-description {
-          color: var(--gray);
-          margin-bottom: 1rem;
-          font-size: 0.95rem;
-        }
-        .project-technologies {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem;
-          margin-bottom: 1.5rem;
-        }
-        .tech-tag {
-          background-color: var(--light);
-          color: var(--primary);
-          padding: 4px 12px;
-          border-radius: 20px;
-          font-size: 0.85rem;
-          font-weight: 500;
-          border: 1px solid var(--light-gray);
-        }
-        .project-links {
-          display: flex;
-          gap: 1rem;
-        }
-        .project-links .btn {
-          padding: 8px 20px;
-          font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-          .project-links {
-            flex-direction: column;
-          }
-          .project-links .btn {
-            width: 100%;
-            text-align: center;
-          }
-        }
-      `}</style>
     </div>
   );
 };

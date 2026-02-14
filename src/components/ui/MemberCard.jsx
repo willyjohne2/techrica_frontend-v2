@@ -1,4 +1,3 @@
-
 const MemberCard = ({ member, onClick }) => {
   const handleClick = () => {
     if (member.portfolioUrl) {
@@ -9,86 +8,32 @@ const MemberCard = ({ member, onClick }) => {
   };
 
   return (
-    <div className="member-card" onClick={handleClick}>
-      <div className="member-image">
-        <img src={member.image} alt={member.name} />
+    <div
+      onClick={handleClick}
+      className="bg-green-950 rounded-xl overflow-hidden shadow-md transition-transform duration-300 cursor-pointer h-full hover:-translate-y-2 hover:shadow-xl">
+      <div className="h-64 overflow-hidden md:h-52">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        />
       </div>
-      <div className="member-info">
-        <h3 className="member-name">{member.name}</h3>
-        <p className="member-role">{member.role}</p>
-        <p className="member-bio">{member.bio}</p>
-        <div className="member-skills">
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          {member.name}
+        </h3>
+        <p className="text-indigo-600 font-semibold mb-4">{member.role}</p>
+        <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
+        <div className="flex flex-wrap gap-2">
           {member.skills?.map((skill, index) => (
-            <span key={index} className="skill-tag">
+            <span
+              key={index}
+              className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
               {skill}
             </span>
           ))}
         </div>
       </div>
-      <style jsx>{`
-        .member-card {
-          background: white;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: var(--shadow);
-          transition: var(--transition);
-          cursor: pointer;
-          height: 100%;
-        }
-        .member-card:hover {
-          transform: translateY(-10px);
-          box-shadow: var(--shadow-lg);
-        }
-        .member-image {
-          height: 250px;
-          overflow: hidden;
-        }
-        .member-image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: var(--transition);
-        }
-        .member-card:hover .member-image img {
-          transform: scale(1.05);
-        }
-        .member-info {
-          padding: 1.5rem;
-        }
-        .member-name {
-          font-size: 1.25rem;
-          margin-bottom: 0.5rem;
-          color: var(--dark);
-        }
-        .member-role {
-          color: var(--primary);
-          font-weight: 600;
-          margin-bottom: 1rem;
-        }
-        .member-bio {
-          color: var(--gray);
-          margin-bottom: 1rem;
-          font-size: 0.95rem;
-        }
-        .member-skills {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem;
-        }
-        .skill-tag {
-          background-color: var(--light-gray);
-          color: var(--dark);
-          padding: 4px 12px;
-          border-radius: 20px;
-          font-size: 0.85rem;
-          font-weight: 500;
-        }
-        @media (max-width: 768px) {
-          .member-image {
-            height: 200px;
-          }
-        }
-      `}</style>
     </div>
   );
 };
