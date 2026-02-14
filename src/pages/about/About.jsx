@@ -48,12 +48,12 @@ const About = () => {
           },
           {
             id: 4,
-            name: "Jeff Arribion",
+
+            name: "Tony",
             role: "Full Stack Developer",
             bio: "Bridging frontend and backend for complete solutions.",
-            image:
-              "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
-            portfolioUrl: "https://sarahmiller.dev",
+            image: "https://via.placeholder.com/400x400",
+            portfolioUrl: "https://tonyrodriguez.dev",
             skills: ["React", "Node.js", "MongoDB", "GraphQL"],
           },
           {

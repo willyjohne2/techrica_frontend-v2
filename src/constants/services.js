@@ -1,32 +1,25 @@
+import { Lock } from "lucide-react";
+import { ScreenShare } from "lucide-react";
 export const services = [
   {
-    icon: "💻",
+    icon: " 💻",
     title: "Web Development",
-    description: "Modern responsive websites and web applications",
+    description: "Responsive, modern websites and scalable web applications",
   },
   {
     icon: "📱",
-    title: "Mobile Apps",
-    description: "iOS and Android applications with React Native",
+    title: "Mobile App Development",
+    description: "Cross-platform iOS and Android apps built with React Native",
   },
   {
     icon: "🤖",
-    title: "AI Intergration",
-    description: "Machine learning and AI-powered solutions",
+    title: "System Development & AI Integration",
+    description: "Custom software solutions with AI capabilities for enhanced performance",
   },
   {
-    icon: "🏢",
-    title: "Business Systems",
-    description: "Custom enterprise software solutions",
-  },
-  {
-    icon: "💻",
-    title: "automation",
-    description: "Automating repetitive tasks and workflows",
-  },
-  {
-    icon: "🤖",
-    title: "cyber security",
-    description: "Protecting digital assets and infrastructure",
+    icon: "🔒",
+    title: "Software Cybersecurity",
+    description:
+      "Comprehensive security solutions to protect your software and data from cyber threats",
   },
 ];
