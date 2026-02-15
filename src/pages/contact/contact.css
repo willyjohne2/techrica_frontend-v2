@@ -1,0 +1,190 @@
+.contact-page {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+.contact-hero {
+  padding: 120px 0 100px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  width: 20%;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #d7d9dc;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: #a0a9b5;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.decorative-circles {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: 250px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Contact Cards Section */
+.contact-cards-section {
+  padding: 60px 0 100px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background: #eff6ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.contact-card .card-info {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.contact-card .btn-contact {
+  padding: 12px 24px;
+  background: #ff5733; /* HubSpot orange style */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.contact-card .btn-contact:hover {
+  background: #e64a19;
+}
+
+.contact-card .secondary-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.contact-card .secondary-link:hover {
+  border-color: #2563eb;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero-text p {
+    margin: 0 auto;
+  }
+
+  .hero-image-wrapper {
+    justify-content: center;
+  }
+
+  .decorative-circles {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}

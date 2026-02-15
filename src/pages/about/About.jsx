@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import MemberCard from "../../components/ui/MemberCard";
 import "./About.css";
+import Florant from "../../assets/Florant.jpeg";
+import Josphat from "../../assets/Josphat.jpeg";
+import Job from "../../assets/Job.jpeg";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -19,13 +22,19 @@ const About = () => {
           {
             id: 1,
             name: "Davine Olouch",
-            role: "Marketing Manager",
-            bio: "Passionate about creating beautiful user interfaces with React.",
+            role: "Chief Executive Officer",
+            bio: "Chief Executive Officer providing strategic leadership and vision for the organization. Davine drives growth, fosters innovation, and builds strong partnerships while ensuring the company stays aligned with its mission and long-term objectives.",
             image:
               "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
             portfolioUrl: "https://alexjohnson.dev",
-            skills: ["React", "JavaScript", "CSS", "UI/UX"],
+            skills: [
+              "Leadership",
+              "Strategic Planning",
+              "Business Development",
+              "Decision Making",
+            ],
           },
+
           {
             id: 2,
             name: "Wilson Maina",
@@ -38,21 +47,32 @@ const About = () => {
           },
           {
             id: 3,
-            name: "Mike",
-            role: "AI Specialist",
-            bio: "Creating intelligent solutions with machine learning.",
-            image:
-              "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+            name: "Josphat Omondi",
+            role: "Chief Financial Officer",
+            bio: "Chief Financial Officer responsible for overseeing financial strategy, budgeting, and sustainable growth. Josphat ensures sound financial planning, risk management, and efficient resource allocation to support the organization’s long-term success.",
+            image: Josphat,
             portfolioUrl: "https://davidkim.ai",
-            skills: ["Python", "TensorFlow", "ML", "Data Science"],
+            skills: [
+             "Strategic Marketing & Brand Development",
+             "Software Engineering & Web Development",
+             "Full-Stack Application Development",
+             "System Design & Architecture",
+             "Business Process Automation",
+             "UI/UX Design & Product Thinking",
+             "Data Analysis & Performance Tracking",
+             "Project Management & Team Collaboration",
+             "Problem Solving & Critical Thinking",
+             "Innovation & Technology Leadership"
+            ],
           },
+
           {
             id: 4,
 
-            name: "Tony",
-            role: "Full Stack Developer",
-            bio: "Bridging frontend and backend for complete solutions.",
-            image: "https://via.placeholder.com/400x400",
+            name: "Job Otieno",
+            role: "Marketing Director",
+            bio: "As Marketing Director, I lead the company’s marketing strategy to build brand visibility, drive customer growth, and increase revenue through effective digital and market-driven campaigns.",
+            image: Job,
             portfolioUrl: "https://tonyrodriguez.dev",
             skills: ["React", "Node.js", "MongoDB", "GraphQL"],
           },
@@ -74,22 +94,21 @@ const About = () => {
             ],
           },
           {
-            id: 6,
-            name: "John",
-            role: "Full Stack Developer",
-            bio: "Full Stack Developer passionate about building scalable, user-focused web applications. Experienced in React, Node.js, and modern JavaScript technologies, I specialize in creating seamless frontend experiences backed by robust backend systems. I enjoy turning complex problems into simple, elegant solutions.",
-            image:
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-            portfolioUrl: "https://mariagarcia.dev",
+            id: 7,
+            name: "John Warui",
+            role: "Chief Innovation Officer",
+            bio: "Chief Innovation Officer focused on driving technological advancement and strategic growth. Joh leads innovation initiatives, explores emerging technologies, and transforms bold ideas into impactful digital solutions that position the company ahead of industry trends.",
+            image: Florant, // replace with actual image import
+            portfolioUrl: "https://yourportfolio.com",
             skills: [
-              "React",
-              "JavaScript",
-              "CSS",
-              "UI/UX",
-              "TypeScript",
-              "Express.js",
+              "Innovation Strategy",
+              "Product Development",
+              "Emerging Technologies",
+              "Leadership",
+              "Digital Transformation",
             ],
           },
+
           {
             id: 7,
             name: "Josphat",

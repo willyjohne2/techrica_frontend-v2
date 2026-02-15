@@ -37,8 +37,8 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <ul className="contact-info">
               <li>📧 hello@techrica.com</li>
-              <li>📱 +1 (555) 123-4567</li>
-              <li>📍 San Francisco, CA</li>
+              <li>📱 +254 712 345 678</li>
+              <li>📍 Nairobi, Kenya</li>
             </ul>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
               <a href="#" aria-label="LinkedIn">
                 💼
               </a>
-              <a href="#" aria-label="GitHub">
+              <a href="https://github.com/TECH-RICA" aria-label="GitHub">
                 🐙
               </a>
               <a href="#" aria-label="Instagram">
