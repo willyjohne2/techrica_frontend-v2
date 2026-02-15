@@ -4,6 +4,7 @@ import "./About.css";
 import Florant from "../../assets/Florant.jpeg";
 import Josphat from "../../assets/Josphat.jpeg";
 import Job from "../../assets/Job.jpeg";
+import Davine from "../../assets/Davine.jpeg";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -25,7 +26,7 @@ const About = () => {
             role: "Chief Executive Officer",
             bio: "Chief Executive Officer providing strategic leadership and vision for the organization. Davine drives growth, fosters innovation, and builds strong partnerships while ensuring the company stays aligned with its mission and long-term objectives.",
             image:
-              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+              Davine,
             portfolioUrl: "https://alexjohnson.dev",
             skills: [
               "Leadership",
@@ -55,14 +56,6 @@ const About = () => {
             skills: [
              "Strategic Marketing & Brand Development",
              "Software Engineering & Web Development",
-             "Full-Stack Application Development",
-             "System Design & Architecture",
-             "Business Process Automation",
-             "UI/UX Design & Product Thinking",
-             "Data Analysis & Performance Tracking",
-             "Project Management & Team Collaboration",
-             "Problem Solving & Critical Thinking",
-             "Innovation & Technology Leadership"
             ],
           },
 
@@ -74,7 +67,13 @@ const About = () => {
             bio: "As Marketing Director, I lead the company’s marketing strategy to build brand visibility, drive customer growth, and increase revenue through effective digital and market-driven campaigns.",
             image: Job,
             portfolioUrl: "https://tonyrodriguez.dev",
-            skills: ["React", "Node.js", "MongoDB", "GraphQL"],
+            skills: ["Strategic Marketing & Brand Development",
+             "System Design & Architecture",
+             "Business Process Automation",
+             "UI/UX Design & Product Thinking",
+             "Data Analysis & Performance Tracking",
+             "Project Management & Team Collaboration",
+           ],
           },
           {
             id: 5,
@@ -111,9 +110,9 @@ const About = () => {
 
           {
             id: 7,
-            name: "Josphat",
-            role: "Backend Engineer",
-            bio: "Expert in building scalable server-side applications.",
+            name: "Arribion",
+            role: "Developer",
+            bio: "Product Design & Mobile Development. I have a passion for creating intuitive and engaging user experiences. With expertise in React Native and a strong background in UI/UX design, I specialize in building mobile applications that are both visually appealing and highly functional. I enjoy collaborating with cross-functional teams to bring innovative ideas to life.",
             image:
               "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
             portfolioUrl: "https://mariagarcia.dev",

@@ -7,7 +7,7 @@ import { Security } from "../../components/content/home/SecurityDesign";
 import Stats from "../../components/content/home/Stats";
 import CallToAction from "../../components/content/home/CallToAction";
 import Testimonials from "../../components/content/home/Testimonials";
-import Blogs from "../../components/content/home/Blogs";
+// import Blogs from "../../components/content/home/Blogs";
 import Portifolio from "../../components/content/home/Portifolio";
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <HowItWorks />
       <Security />
       <Portifolio/>
-      <Blogs/>
+      {/* <Blogs/> */}
       <Testimonials />
       <CallToAction/>
     </>

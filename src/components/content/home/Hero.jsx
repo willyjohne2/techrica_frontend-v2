@@ -8,8 +8,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b98120_1px,transparent_1px),linear-gradient(to_bottom,#10b98120_1px,transparent_1px)] bg-size-[4rem_4rem]"></div>
 
       {/* Gradient Orbs */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-green-400/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/4   w-60 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4   w-60 h-96 bg-green-400/10 rounded-full blur-3xl"></div>
 
       {/* Content */}
         <img src={hero_img_2} alt="" className="max-w-[10em] md:max-w-[20em] opacity-95 absolute top-20 left-0 " />

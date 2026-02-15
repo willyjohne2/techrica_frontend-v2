@@ -1,6 +1,10 @@
-import React from "react";
-
-
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -46,16 +50,19 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <div className="social-links">
               <a href="#" aria-label="Twitter">
-                🐦
+                <FaTwitter />
               </a>
               <a href="#" aria-label="LinkedIn">
-                💼
+                <FaLinkedin />
               </a>
               <a href="https://github.com/TECH-RICA" aria-label="GitHub">
                 🐙
               </a>
+              <a href="#" aria-label="WhatsApp">
+                <FaWhatsapp />
+              </a>
               <a href="#" aria-label="Instagram">
-                📸
+                <FaInstagram />
               </a>
             </div>
           </div>
