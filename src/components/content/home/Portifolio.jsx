@@ -1,3 +1,4 @@
+import portfolio_image from "../../../assets/portifolio-image.png";
 const sampleProjects = [
   {
         id: 1,
@@ -21,10 +22,13 @@ const sampleProjects = [
 
 const Portifolio = () => {
   return (
-    <section className="min-h-screen bg-slate-950 px-4 py-12">
+    <section className="min-h-screen relative bg-slate-950 px-4 py-12">
+      <img src={portfolio_image} alt="Portfolio" className="absolute hidden md:block left-0 bottom-0 max-w-[32em]  " />
       <h2 className="text-3xl font-bold text-center mb-8 text-green-600">Our Portfolio</h2>
-          <div className="flex gap-8">
-              <div className="flex-2 grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+      <div className="flex justify-between">
+        <div className="flex-1 hidden md:block"></div>
+        <div className="flex-2">
+              <div className="flex-2 grid gap-4 grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
                   {
                     sampleProjects.map((project) => (
                         <div key={project.id} className="bg-slate-800 p-4 min-h-[20em] rounded-lg">
@@ -35,6 +39,7 @@ const Portifolio = () => {
                     ))  
                   }
               </div>
+        </div>
             </div>
     </section>
   )

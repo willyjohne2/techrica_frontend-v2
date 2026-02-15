@@ -92,9 +92,9 @@ const About = () => {
           },
           {
             id: 7,
-            name: "Josphat",
-            role: "Backend Engineer",
-            bio: "Expert in building scalable server-side applications.",
+            name: "Arribion",
+            role: "Developer",
+            bio: "Product Design & Mobile Development. I have a passion for creating intuitive and engaging user experiences. With expertise in React Native and a strong background in UI/UX design, I specialize in building mobile applications that are both visually appealing and highly functional. I enjoy collaborating with cross-functional teams to bring innovative ideas to life.",
             image:
               "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
             portfolioUrl: "https://mariagarcia.dev",

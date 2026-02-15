@@ -1,6 +1,10 @@
-import React from "react";
-
-
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -36,9 +40,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <ul className="contact-info">
-              <li>📧 hello@techrica.com</li>
-              <li>📱 +1 (555) 123-4567</li>
-              <li>📍 San Francisco, CA</li>
+              <li className="flex gap-3 items-center"><MdEmail size={25} className="mr-2" /> hello@techrica.com</li>
+              <li className="flex gap-3 items-center"><IoCallSharp size={25} className="mr-2" /> +1 (555) 123-4567</li>
+              <li className="flex gap-3 items-center"><FaLocationDot size={25} className="mr-2" /> San Francisco, CA</li>
             </ul>
           </div>
 
@@ -46,16 +50,19 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <div className="social-links">
               <a href="#" aria-label="Twitter">
-                🐦
+                <FaTwitter />
               </a>
               <a href="#" aria-label="LinkedIn">
-                💼
+                <FaLinkedin />
               </a>
               <a href="#" aria-label="GitHub">
-                🐙
+                <FaGithub />
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <FaWhatsapp />
               </a>
               <a href="#" aria-label="Instagram">
-                📸
+                <FaInstagram />
               </a>
             </div>
           </div>
