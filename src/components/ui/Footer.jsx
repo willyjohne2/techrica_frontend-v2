@@ -58,10 +58,7 @@ const Footer = () => {
               <a href="https://github.com/TECH-RICA" aria-label="GitHub">
                 🐙
               </a>
-              <a
-                href="https://chat.whatsapp.com/HSqaIK1alt6Idj3LkINOdM?mode=gi_t"
-                aria-label="WhatsApp"
-              >
+              <a href="https://wa.me/254118606119" aria-label="WhatsApp">
                 <FaWhatsapp />
               </a>
               {/* <a href="#" aria-label="Instagram">

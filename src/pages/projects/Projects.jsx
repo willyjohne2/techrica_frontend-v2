@@ -15,7 +15,7 @@ const Projects = () => {
     { id: "ai", label: "AI Systems" },
     { id: "business", label: "Business Systems" },
   ];
-
+   
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -36,7 +36,7 @@ const Projects = () => {
             category: "web",
             image: "https://via.placeholder.com/400x250/22c55e/ffffff",
             demoUrl: "https://demo.techrica.com",
-            githubUrl: "https://github.com/techrica/ecommerce",
+            githubUrl: " https://github.com/floppy-piece/Unicrib",
           },
           {
             id: 2,
