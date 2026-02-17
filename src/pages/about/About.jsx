@@ -5,6 +5,7 @@ import Florant from "../../assets/Florant.jpeg";
 import Josphat from "../../assets/Josphat.jpeg";
 import Job from "../../assets/Job.jpeg";
 import Davine from "../../assets/Davine.jpeg";
+import Wilson from "../../assets/Wilson.jpeg";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -25,8 +26,7 @@ const About = () => {
             name: "Davine Olouch",
             role: "Chief Executive Officer",
             bio: "Chief Executive Officer providing strategic leadership and vision for the organization. Davine drives growth, fosters innovation, and builds strong partnerships while ensuring the company stays aligned with its mission and long-term objectives.",
-            image:
-              Davine,
+            image: Davine,
             portfolioUrl: "https://alexjohnson.dev",
             skills: [
               "Leadership",
@@ -40,9 +40,8 @@ const About = () => {
             id: 2,
             name: "Wilson Maina",
             role: "Chief Development Officer",
-            bio: "Expert in building scalable server-side applications.",
-            image:
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+            bio: "Chief Development Officer, lead's in the design and delivery of scalable, high-performance server-side systems. He oversees the technical strategy, guides the development team, and ensures that solutions are reliable, secure, and built to support growth. With strong expertise in Node.js, Python, PostgreSQL, and AWS, he focuses on building robust backend architectures that power efficient and innovative digital products.",
+            image: Wilson,
             portfolioUrl: "https://mariagarcia.dev",
             skills: ["Node.js", "Python", "PostgreSQL", "AWS"],
           },
@@ -54,8 +53,8 @@ const About = () => {
             image: Josphat,
             portfolioUrl: "https://davidkim.ai",
             skills: [
-             "Strategic Marketing & Brand Development",
-             "Software Engineering & Web Development",
+              "Strategic Marketing & Brand Development",
+              "Software Engineering & Web Development",
             ],
           },
 
@@ -67,13 +66,14 @@ const About = () => {
             bio: "As Marketing Director, I lead the company’s marketing strategy to build brand visibility, drive customer growth, and increase revenue through effective digital and market-driven campaigns.",
             image: Job,
             portfolioUrl: "https://tonyrodriguez.dev",
-            skills: ["Strategic Marketing & Brand Development",
-             "System Design & Architecture",
-             "Business Process Automation",
-             "UI/UX Design & Product Thinking",
-             "Data Analysis & Performance Tracking",
-             "Project Management & Team Collaboration",
-           ],
+            skills: [
+              "Strategic Marketing & Brand Development",
+              "System Design & Architecture",
+              "Business Process Automation",
+              "UI/UX Design & Product Thinking",
+              "Data Analysis & Performance Tracking",
+              "Project Management & Team Collaboration",
+            ],
           },
           {
             id: 5,
