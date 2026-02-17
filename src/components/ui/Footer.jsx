@@ -40,30 +40,33 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <ul className="contact-info">
-              <li>📧 hello@techrica.com</li>
-              <li>📱 +254 712 345 678</li>
-              <li>📍 Nairobi, Kenya</li>
+              <li>📧 techrica2@gmail.com</li>
+              <li>📱 +254 118 606 119</li>
+              <li>📍 Kirinyaga, Kenya</li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <a href="#" aria-label="Twitter">
+              {/* <a href="#" aria-label="Twitter">
                 <FaTwitter />
-              </a>
-              <a href="#" aria-label="LinkedIn">
+              </a> */}
+              {/* <a href="#" aria-label="LinkedIn">
                 <FaLinkedin />
-              </a>
+              </a> */}
               <a href="https://github.com/TECH-RICA" aria-label="GitHub">
                 🐙
               </a>
-              <a href="#" aria-label="WhatsApp">
+              <a
+                href="https://chat.whatsapp.com/HSqaIK1alt6Idj3LkINOdM?mode=gi_t"
+                aria-label="WhatsApp"
+              >
                 <FaWhatsapp />
               </a>
-              <a href="#" aria-label="Instagram">
+              {/* <a href="#" aria-label="Instagram">
                 <FaInstagram />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
