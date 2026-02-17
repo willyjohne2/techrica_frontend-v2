@@ -40,8 +40,18 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <ul className="contact-info">
-              <li>📧 techrica2@gmail.com</li>
-              <li>📱 +254 118 606 119</li>
+              <li>
+                {" "}
+                <a href="mailto:techrica2@gmail.com" target="_blank">
+                  📧 techrica2@gmail.com
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="tel:+254118606119" target="_blank">
+                  📱 +254 118 606 119
+                </a>
+              </li>
               <li>📍 Kirinyaga, Kenya</li>
             </ul>
           </div>
@@ -55,15 +65,27 @@ const Footer = () => {
               {/* <a href="#" aria-label="LinkedIn">
                 <FaLinkedin />
               </a> */}
-              <a href="https://github.com/TECH-RICA" aria-label="GitHub">
+              <a
+                href="https://github.com/TECH-RICA"
+                target="_blank"
+                aria-label="GitHub"
+              >
                 🐙
               </a>
-              <a href="https://wa.me/254118606119" aria-label="WhatsApp">
+              <a
+                href="https://wa.me/254118606119"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
                 <FaWhatsapp />
               </a>
-              {/* <a href="#" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/techrica_/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
@@ -124,6 +146,15 @@ const Footer = () => {
           display: flex;
           align-items: center;
           gap: 0.5rem;
+        }
+        .contact-info a {
+          color: #cbd5e1;
+          text-decoration: none;
+          transition: var(--transition);
+        }
+        .contact-info a:hover {
+          color: blue;
+          padding-left: 5px;
         }
         .social-links {
           display: flex;
