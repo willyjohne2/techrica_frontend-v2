@@ -84,7 +84,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+  <div className="bg-[#020617] min-h-screen">
       {/* Hero Section */}
       {/*}
       <section
@@ -115,7 +115,7 @@ const Projects = () => {
         }}
       >
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-green-900/70"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-black/80 via-black/70 to-green-900/70"></div>
 
         <div className="relative z-10 container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
