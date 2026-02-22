@@ -42,7 +42,8 @@ const Contact = () => {
             </div>
             <h3>Call us directly</h3>
             <p className="card-info">+254 712345678</p>
-            <a href="#" className="secondary-link">
+            {/*<a href="#" className="secondary-link">*/}
+              <a href="mailto:info@techrica.com" className="btn-contact">
               See more local numbers
             </a>
           </div>
@@ -69,7 +70,10 @@ const Contact = () => {
               <Calendar size={32} />
             </div>
             <h3>Get a product demo</h3>
+            {/*
             <a href="#" className="btn-contact">
+            */}
+            <a href="mailto:info@techrica.com" className="btn-contact">
               Get a demo
             </a>
           </div>
