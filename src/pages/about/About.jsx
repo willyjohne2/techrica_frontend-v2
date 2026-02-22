@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import MemberCard from "../../components/ui/MemberCard";
 import "./About.css";
 import Florant from "../../assets/Florant.jpeg";
-import Josphat from "../../assets/Josphat.jpeg";
+import Josphat from "../../assets/Josphat.jpg";
 import Job from "../../assets/Job.jpeg";
 import Davine from "../../assets/Davine.jpeg";
 import Wilson from "../../assets/Wilson.jpeg";
 import Benson from "../../assets/Benson.jpg";
+import Michael from "../../assets/Michael.jpg";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -94,8 +95,7 @@ const About = () => {
             name: "Michael Destiny",
             role: "Chief Operating Officer",
             bio: "Passionate about creating beautiful user interfaces with React.",
-            image:
-              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+            image: Michael, // replace with actual image import
             portfolioUrl: "https://alexjohnson.dev",
             skills: [
               "Backend Development",
