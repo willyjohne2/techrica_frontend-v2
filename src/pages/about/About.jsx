@@ -6,6 +6,7 @@ import Josphat from "../../assets/Josphat.jpeg";
 import Job from "../../assets/Job.jpeg";
 import Davine from "../../assets/Davine.jpeg";
 import Wilson from "../../assets/Wilson.jpeg";
+import Benson from "../../assets/IMG-20250504-WA0000.jpg";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -107,6 +108,26 @@ const About = () => {
               "Digital Transformation",
             ],
           },
+
+          {
+          id: 8,
+          name: "Benson Okwemba",
+          role: "Cybersecurity Specialist",
+          bio: "Driving the company’s cybersecurity strategy to protect digital assets and ensure data privacy. Benson implements robust security measures, conducts risk assessments, and stays ahead of emerging threats to safeguard the organization’s information and maintain trust with clients.",
+          image:
+          "https://xxxxxxxxx",
+          portfolioUrl: "https://yourportfolio.com",
+          skills: ["Frontend Development", 
+            "Backend Development", 
+            "Cloud Computing", 
+            "Cybersecurity", 
+            "DevOps",
+            "Software Architecture",
+            "System Design",
+            "Security and Standards Compliance",
+            "New Tech Adoption and Integration",
+          ],
+           },
 
           // {
           //   id: 7,
