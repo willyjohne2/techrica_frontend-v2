@@ -56,6 +56,9 @@ const About = () => {
             skills: [
               "Strategic Marketing & Brand Development",
               "Software Engineering & Web Development",
+              "System Design & Architecture",
+              "Business Process Automation",
+              "UI/UX Design & Product Thinking",
             ],
           },
 
@@ -98,6 +101,9 @@ const About = () => {
               "Agile Methodologies",
               "TypeScript",
               "Express.js",
+              "Team Coordination",
+              "Project Delivery & Timelines",
+              "Quality of Excution",
             ],
           },
           {
