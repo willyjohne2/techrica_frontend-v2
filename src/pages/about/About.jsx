@@ -80,17 +80,21 @@ const About = () => {
           },
           {
             id: 5,
-            name: "Mike",
+            name: "Michael Destiny",
             role: "Frontend Developer",
             bio: "Passionate about creating beautiful user interfaces with React.",
             image:
               "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
             portfolioUrl: "https://alexjohnson.dev",
             skills: [
+              "Backend Development",
+              "Cloud Computing",
+              "Cybersecurity",
               "React",
               "JavaScript",
               "CSS",
               "UI/UX",
+              "Agile Methodologies",
               "TypeScript",
               "Express.js",
             ],
