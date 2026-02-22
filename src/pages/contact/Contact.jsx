@@ -98,6 +98,22 @@ const Contact = () => {
 
             <button type="submit">Send Message</button>
           </form>
+
+          {/* Business Creditability Section */}
+          <section className="contact-trust">
+            <div className="trust-container">
+              <div>
+                <h3>Trusted by Businesses & Startups</h3>
+                <p>We’ve delivered digital solutions across fintech, e-commerce, enterprise systems, and automation.</p>
+              </div>
+
+              <div className="trust-stats">
+                <div><span>40+</span><p>Projects Delivered</p></div>
+                <div><span>15+</span><p>Active Clients</p></div>
+                <div><span>5+</span><p>Years Experience</p></div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>
