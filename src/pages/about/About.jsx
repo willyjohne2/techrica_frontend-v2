@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import MemberCard from "../../components/ui/MemberCard";
 import "./About.css";
 import Florant from "../../assets/Florant.jpeg";
-import Josphat from "../../assets/Josphat.jpeg";
+import Josphat from "../../assets/Josphat.jpg";
 import Job from "../../assets/Job.jpeg";
 import Davine from "../../assets/Davine.jpeg";
 import Wilson from "../../assets/Wilson.jpeg";
@@ -59,7 +59,7 @@ const About = () => {
             role: "Chief Financial Officer",
             bio: "Chief Financial Officer responsible for overseeing financial strategy, budgeting, and sustainable growth. Josphat ensures sound financial planning, risk management, and efficient resource allocation to support the organization’s long-term success.",
             image: Josphat,
-            portfolioUrl: "https://davidkim.ai",
+            portfolioUrl: "https://yourportfolio.com",
             skills: [
               "Frontend Development",
               "Strategic Marketing & Brand Development",
