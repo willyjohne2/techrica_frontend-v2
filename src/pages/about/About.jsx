@@ -93,6 +93,7 @@ const About = () => {
               "React",
               "JavaScript",
               "CSS",
+              "AI/ML",
               "UI/UX",
               "Agile Methodologies",
               "TypeScript",
