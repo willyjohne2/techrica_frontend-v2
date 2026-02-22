@@ -20,7 +20,7 @@
 
 .hero-text {
   flex: 1;
-  width: 20%;
+  max-width: 600px;
 }
 
 .hero-text h1 {
@@ -31,19 +31,35 @@
   margin-bottom: 2rem;
 }
 
+/*
 .hero-text p {
   font-size: 1.25rem;
   color: #a0a9b5;
   line-height: 1.6;
-  max-width: 500px;
+  width: 20%;
+}*/
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: #a0a9b5;
+  line-height: 1.6;
+  max-width: 600px;
 }
 
+/*
 .hero-image-wrapper {
   flex: 1;
   position: relative;
   display: flex;
   justify-content: flex-end;
   width: 80%;
+}
+*/
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image {
@@ -186,5 +202,40 @@
   
   .cards-container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 80px 0 60px;
+  }
+
+  .hero-container {
+    gap: 2.5rem;
+    padding: 0 1.25rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-image {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
   }
 }
