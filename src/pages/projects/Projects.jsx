@@ -108,6 +108,7 @@ const Projects = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           {/* Filter Buttons */}
+          {/*
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {filters.map((filter) => (
               <button
@@ -118,6 +119,23 @@ const Projects = () => {
                     ? "bg-green-600 border-green-600 text-white"
                     : "bg-white border-gray-300 text-gray-800 hover:border-green-600 hover:text-green-600"
                 }`}>
+                {filter.label}
+              </button>
+            ))}
+          </div>
+          */}
+
+          <div className="flex flex-wrap justify-center gap-3 mb-14">
+            {filters.map((filter) => (
+              <button
+                key={filter.id}
+                onClick={() => handleFilter(filter.id)}
+                className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                  activeFilter === filter.id
+                    ? "bg-green-600 text-white shadow-lg scale-105"
+                    : "bg-slate-800 text-gray-300 hover:bg-slate-700 hover:text-white"
+                }`}
+              >
                 {filter.label}
               </button>
             ))}
