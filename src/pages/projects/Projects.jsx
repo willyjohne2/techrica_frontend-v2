@@ -86,6 +86,7 @@ const Projects = () => {
   return (
     <div>
       {/* Hero Section */}
+      {/*}
       <section
         className="py-40 md:py-32 text-center text-white bg-linear-to-r from-green-900 to-green-700"
         style={{
@@ -100,6 +101,29 @@ const Projects = () => {
           </h1>
           <p className="text-lg md:text-base max-w-xl mx-auto text-green-100">
             Explore our portfolio of innovative digital solutions
+          </p>
+        </div>
+      </section>
+      */}
+
+      <section
+        className="relative py-36 md:py-32 text-center text-white overflow-hidden"
+        style={{
+          backgroundImage: `url(${solutionImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-green-900/70"></div>
+
+        <div className="relative z-10 container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
+            Solutions & Workflow
+          </h1>
+          <p className="text-lg md:text-base max-w-xl mx-auto text-green-200 leading-relaxed">
+            Discover how we transform ideas into powerful digital solutions through
+            innovation, precision, and creativity.
           </p>
         </div>
       </section>
