@@ -6,7 +6,7 @@ import Josphat from "../../assets/Josphat.jpeg";
 import Job from "../../assets/Job.jpeg";
 import Davine from "../../assets/Davine.jpeg";
 import Wilson from "../../assets/Wilson.jpeg";
-import Benson from "../../assets/IMG-20250504-WA0000.jpg";
+import Benson from "../../assets/Benson.jpg";
 
 const About = () => {
   const [members, setMembers] = useState([]);
@@ -74,6 +74,8 @@ const About = () => {
               "UI/UX Design & Product Thinking",
               "Data Analysis & Performance Tracking",
               "Project Management & Team Collaboration",
+              "User Research & Customer Insights",
+              "Prduct Roadmapping"
             ],
           },
           {
@@ -114,8 +116,7 @@ const About = () => {
           name: "Benson Okwemba",
           role: "Cybersecurity Specialist",
           bio: "Driving the company’s cybersecurity strategy to protect digital assets and ensure data privacy. Benson implements robust security measures, conducts risk assessments, and stays ahead of emerging threats to safeguard the organization’s information and maintain trust with clients.",
-          image:
-          "https://xxxxxxxxx",
+          image: Benson, // replace with actual image import
           portfolioUrl: "https://yourportfolio.com",
           skills: ["Frontend Development", 
             "Backend Development", 
