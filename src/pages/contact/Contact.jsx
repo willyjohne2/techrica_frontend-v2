@@ -9,11 +9,17 @@ const Contact = () => {
       <section className="contact-hero">
         <div className="hero-container">
           <div className="hero-text">
-            <h1>Contact Us About techrica's Services</h1>
+            <h1>Let’s Build Something Powerful Together</h1>
+            {/*
             <p>
               We'd love to show you how you can get more traffic and leads,
               increase your sales productivity, provide better customer service,
               or all of the above! Here are a few ways to reach out to our team.
+            </p>
+            */}
+            <p>
+              Tell us about your project and discover how Techrica can help you build
+              scalable, secure, and high-performance digital solutions.
             </p>
           </div>
           <div className="hero-image-wrapper">
