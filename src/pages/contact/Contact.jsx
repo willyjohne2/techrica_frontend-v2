@@ -69,6 +69,27 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <section className="contact-form-section">
+        <div className="form-container">
+          <h2>Send Us a Message</h2>
+          <p>Fill in the form and our team will get back to you within 24 hours.</p>
+
+          <form className="contact-form">
+            <div className="form-group">
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Email Address" required />
+            </div>
+
+            <input type="text" placeholder="Subject" required />
+
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </div>
   );
 };
