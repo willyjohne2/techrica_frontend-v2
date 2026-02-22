@@ -44,7 +44,14 @@ const About = () => {
             bio: "Chief Development Officer, lead's in the design and delivery of scalable, high-performance server-side systems. He oversees the technical strategy, guides the development team, and ensures that solutions are reliable, secure, and built to support growth. With strong expertise in Node.js, Python, PostgreSQL, and AWS, he focuses on building robust backend architectures that power efficient and innovative digital products.",
             image: Wilson,
             portfolioUrl: "https://mariagarcia.dev",
-            skills: ["Node.js", "Python", "PostgreSQL", "AWS"],
+            skills: [
+              "Backend Development",
+              "Investment in Emerging Technologies",
+              "Database Management",
+              "High-Caliber Code Quality",
+              "API Design & Development",
+              "Scalability & Performance Optimization",
+            ],
           },
           {
             id: 3,
@@ -54,6 +61,7 @@ const About = () => {
             image: Josphat,
             portfolioUrl: "https://davidkim.ai",
             skills: [
+              "Frontend Development",
               "Strategic Marketing & Brand Development",
               "Software Engineering & Web Development",
               "System Design & Architecture",
@@ -66,7 +74,7 @@ const About = () => {
             id: 4,
 
             name: "Job Otieno",
-            role: "Marketing Director",
+            role: "Chief Product Officer",
             bio: "As Marketing Director, I lead the company’s marketing strategy to build brand visibility, drive customer growth, and increase revenue through effective digital and market-driven campaigns.",
             image: Job,
             portfolioUrl: "https://tonyrodriguez.dev",
@@ -84,26 +92,18 @@ const About = () => {
           {
             id: 5,
             name: "Michael Destiny",
-            role: "Frontend Developer",
+            role: "Chief Operating Officer",
             bio: "Passionate about creating beautiful user interfaces with React.",
             image:
               "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
             portfolioUrl: "https://alexjohnson.dev",
             skills: [
               "Backend Development",
-              "Cloud Computing",
-              "Cybersecurity",
-              "React",
-              "JavaScript",
-              "CSS",
-              "AI/ML",
-              "UI/UX",
-              "Agile Methodologies",
-              "TypeScript",
-              "Express.js",
+              "Internal Processing Automation",
               "Team Coordination",
               "Project Delivery & Timelines",
               "Quality of Excution",
+              "Operational Efficiency",
             ],
           },
           {
@@ -114,6 +114,8 @@ const About = () => {
             image: Florant, // replace with actual image import
             portfolioUrl: "https://yourportfolio.com",
             skills: [
+              "Frontend Development",
+              "Backend Development",
               "Innovation Strategy",
               "Product Development",
               "Emerging Technologies",
@@ -125,7 +127,7 @@ const About = () => {
           {
           id: 8,
           name: "Benson Okwemba",
-          role: "Cybersecurity Specialist",
+          role: "Chief Technology Officer",
           bio: "Driving the company’s cybersecurity strategy to protect digital assets and ensure data privacy. Benson implements robust security measures, conducts risk assessments, and stays ahead of emerging threats to safeguard the organization’s information and maintain trust with clients.",
           image: Benson, // replace with actual image import
           portfolioUrl: "https://yourportfolio.com",
