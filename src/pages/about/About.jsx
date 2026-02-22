@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import MemberCard from "../../components/ui/MemberCard";
 import "./About.css";
 import Florant from "../../assets/Florant.jpeg";
-import Josphat from "../../assets/Josphat.jpg";
+import Josphat from "../../assets/Josphat.jpeg";
 import Job from "../../assets/Job.jpeg";
 import Davine from "../../assets/Davine.jpeg";
 import Wilson from "../../assets/Wilson.jpeg";
