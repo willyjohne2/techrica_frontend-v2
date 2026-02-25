@@ -17,7 +17,7 @@
 .hero-section {
   position: relative;
   padding: 160px 0 100px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #020d1f 0%, #001701 100%);
   color: white;
   overflow: hidden;
 }
@@ -247,7 +247,7 @@
 /* CTA Section */
 .cta-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #001701 0%, #020d1f 100%);
   color: white;
   text-align: center;
 }
@@ -367,4 +367,45 @@
   .mv-card {
     padding: 1.5rem;
   }
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-content p {
+    font-size: 1.05rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.hero-section,
+.mv-section,
+.team-section,
+.cta-section {
+  position: relative;
+}
+
+.cta-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cta-section {
+  border-top: 1px solid rgba(56, 189, 248, 0.1);
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import MemberCard from "../../components/ui/MemberCard";
+import { useNavigate } from "react-router-dom";
 import "./About.css";
 import Florant from "../../assets/Florant.jpeg";
 import Josphat from "../../assets/Josphat.jpg";
@@ -12,6 +13,8 @@ import Michael from "../../assets/Michael.jpg";
 const About = () => {
   const [members, setMembers] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchMembers = async () => {
@@ -170,6 +173,7 @@ const About = () => {
 
   return (
     <div className="about-page">
+      
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-overlay"></div>
@@ -178,37 +182,33 @@ const About = () => {
             <h1 className="hero-title">
               Welcome to <span className="highlight">Techrica</span>
             </h1>
+
             <p className="hero-subtitle">
-              Techrica is a forward-thinking technology company driven by
-              innovation, creativity, and excellence. We specialize in building
-              modern, scalable, and user-focused digital solutions that empower
-              businesses and individuals to thrive in the digital world.
+              We are a forward-thinking technology company focused on delivering
+              innovative, scalable, and user-centric digital solutions.
             </p>
-            <p className="hero-subtitle">
+
+            <p className="hero-description">
               Our team of passionate developers, designers, and strategists work
-              collaboratively to transform ideas into powerful digital
-              experiences. From responsive websites and eCommerce platforms to
-              custom web applications, we combine technical expertise with
-              creative design to deliver results that exceed expectations.
+              collaboratively to transform ideas into impactful digital products —
+              from responsive websites and e-commerce platforms to powerful custom
+              web applications.
             </p>
-            <p className="hero-subtitle">
-              At Techrica, we believe technology should be accessible,
-              efficient, and impactful. Our mission is to help brands grow,
-              innovate, and succeed through smart and reliable digital
-              solutions.
-            </p>
+
             <div className="hero-stats">
               <div className="stat-item">
                 <span className="stat-number">50+</span>
-                <span className="stat-label">Projects Completed</span>
+                <span className="stat-label">Projects</span>
               </div>
+
               <div className="stat-item">
                 <span className="stat-number">20+</span>
-                <span className="stat-label">Team Members</span>
+                <span className="stat-label">Experts</span>
               </div>
+
               <div className="stat-item">
                 <span className="stat-number">5+</span>
-                <span className="stat-label">Years Experience</span>
+                <span className="stat-label">Years</span>
               </div>
             </div>
           </div>
@@ -298,7 +298,10 @@ const About = () => {
           <div className="cta-content">
             <h2>Ready to Start Your Project?</h2>
             <p>Let's collaborate and bring your ideas to life</p>
-            <button className="cta-button">Get in Touch</button>
+
+            <button className="cta-button" onClick={() => navigate("/contact")}>
+              Get in Touch
+            </button>
           </div>
         </div>
       </section>
