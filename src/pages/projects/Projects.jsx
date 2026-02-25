@@ -19,10 +19,13 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/projects");
+        const response = await fetch("http://localhost:8000/api/projects/");
         const data = await response.json();
-        setProjects(data);
-        setFilteredProjects(data);
+        // Django DRF might return results in a 'results' field if paginated, 
+        // but here we expect a list.
+        const projectsData = Array.isArray(data) ? data : data.results || [];
+        setProjects(projectsData);
+        setFilteredProjects(projectsData);
       } catch (error) {
         console.error("Error fetching projects:", error);
         // Fallback data

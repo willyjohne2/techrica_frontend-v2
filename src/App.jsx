@@ -6,6 +6,7 @@ import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import Projects from "./pages/projects/Projects.jsx";
 import Contact from "./pages/contact/Contact.jsx";
+import Conversation from "./pages/contact/Conversation.jsx";
 import "./index.css"
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/conversation/:threadId" element={<Conversation />} />
           </Routes>
         </main>
         <Footer />

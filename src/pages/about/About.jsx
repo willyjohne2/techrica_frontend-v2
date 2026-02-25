@@ -19,9 +19,10 @@ const About = () => {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/members");
+        const response = await fetch("http://localhost:8000/api/members/");
         const data = await response.json();
-        setMembers(data);
+        const membersData = Array.isArray(data) ? data : data.results || [];
+        setMembers(membersData);
       } catch (error) {
         console.error("Error fetching members:", error);
         // Fallback data

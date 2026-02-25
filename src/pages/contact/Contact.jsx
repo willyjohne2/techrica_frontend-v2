@@ -1,8 +1,79 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Phone, MessageSquare, Calendar, ArrowRight } from "lucide-react";
 import "./contact.css";
 
+// ContactForm component for handling form state and POST
+const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("");
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/contact/message/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+        setName(""); setEmail(""); setSubject(""); setMessage("");
+      } else {
+        setStatus("Failed to send message.");
+      }
+    } catch (err) {
+      setStatus("Error sending message.");
+    }
+  };
+
+  return (
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="form-group">
+        <input
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email Address"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          required
+        />
+      </div>
+      <input
+        type="text"
+        placeholder="Subject"
+        value={subject}
+        onChange={e => setSubject(e.target.value)}
+        required
+      />
+      <textarea
+        rows="5"
+        placeholder="Your Message"
+        value={message}
+        onChange={e => setMessage(e.target.value)}
+        required
+      ></textarea>
+      <button type="submit">Send Message</button>
+      {status && <div style={{marginTop:8, color: status.includes("success") ? "green" : "red"}}>{status}</div>}
+    </form>
+  );
+};
+
 const Contact = () => {
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/contact/track-visit/", { method: "POST" });
+  }, []);
   return (
     <div className="contact-page">
       {/* Hero Section */}
@@ -85,20 +156,7 @@ const Contact = () => {
         <div className="form-container">
           <h2>Send Us a Message</h2>
           <p>Fill in the form and our team will get back to you within 24 hours.</p>
-
-          <form className="contact-form">
-            <div className="form-group">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
-            </div>
-
-            <input type="text" placeholder="Subject" required />
-
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-
-            <button type="submit">Send Message</button>
-          </form>
-
+          <ContactForm />
           {/* Business Creditability Section */}
           <section className="contact-trust">
             <div className="trust-container">
@@ -106,7 +164,6 @@ const Contact = () => {
                 <h3>Trusted by Businesses & Startups</h3>
                 <p>We’ve delivered digital solutions across fintech, e-commerce, enterprise systems, and automation.</p>
               </div>
-
               <div className="trust-stats">
                 <div><span>40+</span><p>Projects Delivered</p></div>
                 <div><span>15+</span><p>Active Clients</p></div>
