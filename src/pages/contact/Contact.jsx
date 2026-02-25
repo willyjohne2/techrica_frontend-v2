@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Phone, MessageSquare, Calendar, ArrowRight } from "lucide-react";
 import "./contact.css";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 // ContactForm component for handling form state and POST
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -14,7 +16,7 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus("");
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/contact/message/", {
+      const response = await fetch(`${API_URL}/api/contact/message/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +74,7 @@ const ContactForm = () => {
 
 const Contact = () => {
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/contact/track-visit/", { method: "POST" });
+    fetch(`${API_URL}/api/contact/track-visit/`, { method: "POST" });
   }, []);
   return (
     <div className="contact-page">
