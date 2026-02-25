@@ -1,3 +1,4 @@
+/*
 import portfolio_image from "../../../assets/portifolio-image.png";
 const sampleProjects = [
   {
@@ -46,3 +47,102 @@ const Portifolio = () => {
 }
 
 export default Portifolio
+*/
+
+import portfolio_image from "../../../assets/portifolio-image.png";
+
+const sampleProjects = [
+  {
+    id: 1,
+    image:
+      "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=800&q=60",
+    title: "Enterprise Business Management System",
+    description:
+      "A scalable business automation platform for operations, finance, reporting, and workflow optimization."
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=60",
+    title: "Secure E-Commerce Platform",
+    description:
+      "A modern online store with secure payments, real-time inventory, analytics, and customer experience optimization."
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=800&q=60",
+    title: "AI Customer Support System",
+    description:
+      "Intelligent chatbot and support automation system to improve response time and customer satisfaction."
+  },
+  {
+    id: 4,
+    image:
+      "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=60",
+    title: "Smart Analytics Dashboard",
+    description:
+      "Real-time business intelligence dashboard with predictive insights and performance monitoring."
+  }
+];
+
+const Portifolio = () => {
+  return (
+    <section className="bg-slate-950 py-24 px-4">
+      <div className="max-w-7xl mx-auto">
+
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-center mb-4 text-green-400">
+          Our Portfolio
+        </h2>
+        <p className="text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+          A showcase of high-impact digital solutions engineered for performance,
+          security, scalability, and business growth.
+        </p>
+
+        {/* Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          {/* Left Image */}
+          <div className="hidden lg:block lg:col-span-4">
+            <img
+              src={portfolio_image}
+              alt="Portfolio Illustration"
+              className="w-full max-w-md mx-auto opacity-80"
+            />
+          </div>
+
+          {/* Right Cards */}
+          <div className="lg:col-span-8 grid gap-8 sm:grid-cols-2">
+            {sampleProjects.map((project) => (
+              <div
+                key={project.id}
+                className="group bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-green-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-green-500/10"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Portifolio;
