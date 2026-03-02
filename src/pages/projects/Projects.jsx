@@ -18,7 +18,6 @@ const Projects = () => {
    
   useEffect(() => {
     const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
-    console.log("Using API URL:", API_URL); // Add this line for debugging
     const fetchProjects = async () => {
         try {
             const response = await fetch(`${API_URL}/api/projects/`);        const data = await response.json();
