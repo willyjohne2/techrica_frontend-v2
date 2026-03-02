@@ -15,9 +15,12 @@ const Conversation = () => {
     fetchMessages();
   }, [threadId]);
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
   const fetchMessages = async () => {
+    if (!threadId) return;
     try {
-      const response = await fetch(`/api/contact/thread/${threadId}/`);
+      const response = await fetch(`${API_URL}/api/contact/thread/${threadId}/`);
       if (response.ok) {
         const data = await response.json();
         setMessages(data);
@@ -37,7 +40,7 @@ const Conversation = () => {
 
     setSending(true);
     try {
-      const response = await fetch(`/api/contact/thread/${threadId}/reply/`, {
+      const response = await fetch(`${API_URL}/api/contact/thread/${threadId}/reply/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
